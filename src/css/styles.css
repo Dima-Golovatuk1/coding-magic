@@ -6,11 +6,22 @@
 */
 /* base */
 @import url('./base/reset.css');
+@import url('./base/common.css');
 
 /* layout */
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/leap-year.css');
+@import url('./layout/guess-number.css');
+@import url('./layout/rock-paper-scissors.css');
 @import url('./layout/calculator.css');
-
-
+@import url('./layout/time-calculator.css');
+@import url('./layout/google-dinosaur.css');
+@import url('./layout/football.css');
+@import url('./layout/three-numbers.css');
+@import url('./layout/our-team.css');
+@import url('./layout/choose-scientist.css');
+@import url('./layout/footer.css');
 
 
 :root {
