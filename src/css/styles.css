@@ -25,13 +25,12 @@
 
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  --primary-color: #fff;
+  --secondary-color: #000;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: var(--primary-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
