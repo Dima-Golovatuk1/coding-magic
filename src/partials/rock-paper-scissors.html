@@ -1,33 +1,40 @@
 <section class="rps-sesection" id="rock-paper-scissors">
+    <div class="line"></div>
     <div class="container">
-        <div  class="rps-sesection__div-game">
+        <div class="rps-sesection__div-game">
             <h3 class="rps-sesection__title">Камінь - ножиці - папір</h3>
-            <ul class="rps-sesection__list">
-                <li class="rps-sesection__item">
-                    <button class="rps-sesection__item__btn">
-                        1
-                    </button>
-                </li>
-                <li class="rps-sesection__item">
-                    <button class="rps-sesection__item__btn">
-                        2
-                    </button>
-                </li>
-                <li class="rps-sesection__item">
-                    <button class="rps-sesection__item__btn">
-                        3
-                    </button>
-                </li>
-            </ul>
-            <p class="rps-sesection__text"></p>
-            <button class="rps-sesection__btn">Варіант комп’ютера</button>
+            <form class="rps-sesection__form" id="rps-form">
+                <div class="rps-sesection__form__div">
+                    <label class="rps-sesection__form__label">
+                        <input class="rps-sesection__form__input" type="radio" name="radio" value="stone" />
+                        <img class="rps-sesection__form__label__img" src="img/rock-paper-scissors/stone.png"
+                            alt="stone">
+                    </label>
+
+                    <label class="rps-sesection__form__label">
+                        <input class="rps-sesection__form__input" type="radio" name="radio" value="scissors" />
+                        <img class="rps-sesection__form__label__img" src="img/rock-paper-scissors/scissors.png"
+                            alt="scissors">
+                    </label>
+
+                    <label class="rps-sesection__form__label">
+                        <input class="rps-sesection__form__input" type="radio" name="radio" value="paper" />
+                        <img class="rps-sesection__form__label__img" src="img/rock-paper-scissors/paper.png"
+                            alt="paper">
+                    </label>
+                </div>
+
+                <p class="rps-sesection__text rps-sesection__text-winner rps-sesection__text-loser rps-sesection__text-draw" id="rps-text-result"></p>
+                <button class="rps-sesection__btn">Варіант комп’ютера</button>
+            </form>
         </div>
         <div class="rps-sesection__div-score">
             <p class="rps-sesection__div-score__text">
                 Рахунок:
-                Комп’ютер - <span>0</span>
-                Ви - <span>0</span>
+                Комп’ютер - <span id="rps-score-pc">0</span>
+                Ви - <span id="rps-score-user">0</span>
             </p>
         </div>
     </div>
+
 </section>
