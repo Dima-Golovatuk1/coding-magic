@@ -1,8 +1,8 @@
-document.getElementById("checkBtn").addEventListener("click", function () {
+document.querySelector(".leap__year__btn").addEventListener("click", function () {
   const year = parseInt(document.getElementById("yearInput").value);
-  const result = document.getElementById("result");
+  const result = document.querySelector(".leap__year__result");
 
-  result.className = "leapyear_result"; 
+  result.className = "leap__year__result"; 
 
   if (isNaN(year)) {
     result.textContent = "Будь ласка, введіть коректний рік.";
