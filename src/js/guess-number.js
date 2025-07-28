@@ -1,24 +1,30 @@
-let secretNumber = Math.floor(Math.random() * 10) + 1;
+const form = document.getElementById('form-guess');
+const input = document.getElementById('guessInput');
+const button = document.querySelector('.guess__btn');
+const result = document.querySelector('.guess__result');
 
-document.querySelector('.guess__btn').addEventListener('click', function () {
-  const guess = parseInt(document.getElementById('guessInput').value);
-  const result = document.querySelector('.guess__result');
+let randomNumber = Math.floor(Math.random() * 10);
 
-  result.className = "guess__result"; 
+button.addEventListener('click', onGuess);
 
-  if (isNaN(guess)) {
-    result.textContent = "Введіть число!";
-    result.classList.add("error");
-    return;
-  }
+function onGuess(e) {
+  e.preventDefault();
 
-  if (guess === secretNumber) {
-    result.textContent = `Вітаю, ви вгадали число! (${secretNumber})`;
-    result.classList.add("success");
+  const userGuess = Number(input.value.trim());
+  result.classList.remove('success', 'error');
+
+  if (!userGuess || userGuess < 1 || userGuess > 10) {
+    result.textContent = 'Введіть число від 1 до 10';
+    result.classList.add('error');
+  } else if (userGuess === randomNumber) {
+    result.textContent = 'Вітаю! Ви вгадали число!';
+    result.classList.add('success');
+    randomNumber = Math.floor(Math.random() * 10) + 1;
   } else {
-    result.textContent = `Ви програли, комп’ютер загадав ${secretNumber}`;
-    result.classList.add("error");
+    result.textContent = `На жаль, це не ${userGuess}. Спробуйте ще раз!`;
+    result.classList.add('error');
   }
 
-  secretNumber = Math.floor(Math.random() * 10) + 1; 
-});
+  input.value = '';
+}
+

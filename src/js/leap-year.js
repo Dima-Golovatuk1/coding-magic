@@ -1,4 +1,4 @@
-const form = document.getElementById('form');
+const form = document.getElementById('form-leap');
 const result = document.querySelector('.leap__year__result');
 const button = document.querySelector('.leap__year__btn');
 
