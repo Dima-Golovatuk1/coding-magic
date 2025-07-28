@@ -1,63 +1,60 @@
-const form = document.getElementById("rps-form")
-const text = document.getElementById("rps-text-result")
-const scoreUser = document.getElementById("rps-score-user")
-const scorePc = document.getElementById("rps-score-pc")
+const text = document.getElementById("rps-text-result");
+const scoreUser = document.getElementById("rps-score-user");
+const scorePc = document.getElementById("rps-score-pc");
+const buttons = document.querySelectorAll(".rps-sesection__form__btn");
+const imgPc = document.getElementById("rps-form-pc-img")
 
-
-const counter = {
-    user: 0,
-    pc: 0
-}
-
+const counter = { user: 0, pc: 0 };
 
 const rpsData = {
-    "stone": 1,
-    "scissors": 2,
-    "paper": 3
-}
+    "stone": [1, 'img/rock-paper-scissors/stone.png'],
+    "scissors": [2, 'img/rock-paper-scissors/scissors.png'],
+    "paper": [3, 'img/rock-paper-scissors/paper.png']
+};
 
 
-function onStartGame(event) {
+const rpsDataReverse = {
+    1: "stone",
+    2: "scissors",
+    3: "paper"
+};
+
+
+function playGame(event) {
     event.preventDefault();
+
     text.classList.remove(
         "rps-sesection__text-winner",
         "rps-sesection__text-loser",
         "rps-sesection__text-draw"
     );
+    
+    const userChoiceName = event.currentTarget.value;
+    const userChoice = rpsData[userChoiceName][0];
+    const computerChoice = Math.floor(Math.random() * 3) + 1;
+    const compName = rpsDataReverse[computerChoice];
 
-    const selectedOption = document.querySelector('input[name="radio"]:checked');
+    imgPc.src = rpsData[compName][1];
 
-    if (selectedOption) {
-        const userChoice = rpsData[selectedOption.value];
-        const computerChoice = Math.floor(Math.random() * 3) + 1;
-
-        console.log(`${userChoice} vs ${computerChoice}`)
-
-        if (userChoice === computerChoice) {
-            text.textContent = "Нічия!";
-            text.classList.add("rps-sesection__text-draw");
-        } else if (
-            (userChoice === 1 && computerChoice === 2) ||
-            (userChoice === 2 && computerChoice === 3) ||
-            (userChoice === 3 && computerChoice === 1)
-        ){
-            text.textContent = "Ви виграли раунд!";
-            text.classList.add("rps-sesection__text-winner");
-            counter["user"] += 1;
-            scoreUser.textContent = counter["user"]
-        } else {
-            text.textContent = "Комп’ютер виграв раунд!";
-            text.classList.add("rps-sesection__text-loser");
-            counter["pc"] += 1;
-            scorePc.textContent = counter["pc"]
-        }
-
-        console.log(counter);
-
+    if (userChoice === computerChoice) {
+        text.textContent = "Нічия!";
+        text.classList.add("rps-sesection__text-draw");
+    } else if (
+        (userChoice === 1 && computerChoice === 2) ||
+        (userChoice === 2 && computerChoice === 3) ||
+        (userChoice === 3 && computerChoice === 1)
+    ) {
+        text.textContent = "Ви виграли раунд!";
+        text.classList.add("rps-sesection__text-winner");
+        counter.user++;
+        scoreUser.textContent = counter.user;
     } else {
-        text.textContent = "Нічого не вибрано";
+        text.textContent = "Комп’ютер виграв раунд!";
+        text.classList.add("rps-sesection__text-loser");
+        counter.pc++;
+        scorePc.textContent = counter.pc;
     }
 }
 
-form.addEventListener("submit", onStartGame)
 
+buttons.forEach(btn => btn.addEventListener("click", playGame));
