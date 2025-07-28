@@ -1,22 +1,19 @@
-document.querySelector(".leap__year__btn").addEventListener("click", function () {
-  const year = parseInt(document.getElementById("yearInput").value);
-  const result = document.querySelector(".leap__year__result");
+const form = document.getElementById('form-leap');
+const result = document.querySelector('.leap__year__result');
+const button = document.querySelector('.leap__year__btn');
 
-  result.className = "leap__year__result"; 
+button.addEventListener('click', onBtnClick);
 
-  if (isNaN(year)) {
-    result.textContent = "Будь ласка, введіть коректний рік.";
-    result.classList.add("leap-error");
-    return;
-  }
-
-  const isLeap = (year % 4 === 0);
-
-  if (isLeap) {
-    result.textContent = "Ви народилися у високосний рік!";
-    result.classList.add("leap-success");
+function onBtnClick(e) {
+  e.preventDefault();
+  if (form.year.value % 4 === 0 && form.year.value > 0) {
+    result.textContent = 'Ви народилися у високосний рік!';
+    result.classList.add('leap-success');
+  } else if (form.year.value % 4 !== 0 && form.year.value > 0) {
+    result.textContent = 'Ви народилися не у високосний рік!';
+    result.classList.add('leap-error');
   } else {
-    result.textContent = "Ви народилися не у високосний рік!";
-    result.classList.add("leap-error");
+    result.textContent = 'Будь ласка, введіть коректний рік.';
+    result.classList.add('leap-error');
   }
-});
+}
