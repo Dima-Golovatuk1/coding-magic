@@ -1,6 +1,7 @@
 .time__calc {
   font-family: 'Arial Rounded MT Bold', sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -46,7 +47,7 @@
   border: none;
   background: #ddd;
   border-radius: 20px 0 0 20px;
-  width: 180px;
+  width: 120px;
   outline: none;
   color: #7e7e7e;
   font-family: 'Montserrat Alternates';
@@ -63,18 +64,44 @@
   border-radius: 0 20px 20px 0;
   align-items: center;
   justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.time__calc__btn__img {
+  width: 16px;
+  height: 16px;
+  fill: white;
 }
 
 .time__calc__result {
-  gap: 16px;
   color: #000;
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  padding-bottom: 33px;
 }
 
 .time__calc__dots {
   letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #222;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 33px;
+  border-radius: 12px;
+}
+
+.time__calc__output {
+  color: #000;
+  font-family: 'Montserrat Alternates';
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 12px;
 }
