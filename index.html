@@ -12,8 +12,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat+Alternates&family=Sacramento&display=swap"
     rel="stylesheet">
   
-  <script type="module" crossorigin src="/coding-magic/assets/index-765abc44.js"></script>
-  <link rel="stylesheet" href="/coding-magic/assets/index-0fed842a.css">
+  <script type="module" crossorigin src="/coding-magic/assets/index-49602a74.js"></script>
+  <link rel="stylesheet" href="/coding-magic/assets/index-f27b8135.css">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
       </ul>
     </nav>
 
-    <img class="header__switch-icon" src="/coding-magic/assets/white-beca1d45.svg" alt="#">
+    <img class="header__switch-icon" id="icon" src="/coding-magic/assets/white-beca1d45.svg" alt="#">
     <p class="header__text">Вітаємо, <span class="header__text__user-name">User</span>!</p>
   </div>
 </header>
@@ -63,8 +63,8 @@
     <div class="container">
         <h2 class="year__title">Перевір в який рік ти народився</h2>
         <div class="leap__year__form__container">
-            <form action="" class="leapyear__form">
-                <input class="leap__year__input" type="text" pattern="^[ 0-9]+$" id="yearInput" placeholder="Введіть рік народження">
+            <form action="" class="leapyear__form" id="form-leap">
+                <input name="year" class="leap__year__input" type="text" pattern="^[ 0-9]+$" id="yearInput" placeholder="Введіть рік народження">
                 <button class="leap__year__btn" type="button">
                     <img class="leap__year__img" src="/coding-magic/assets/deandruff-38aa7c2b.svg" alt="">
                 </button>
@@ -74,7 +74,20 @@
     </div>
 
 </section>
-  <!--  -->
+    <section class="guess__number">
+    <div class="container">
+      <h2 class="guess__title">Вгадай число, яке загадав комп’ютер</h2>
+      <div class="guess__form__container">
+        <form action="" class="guess__form" id="form-guess">
+          <input type="text" id="guessInput" class="guess__input" placeholder="Введіть число">
+          <button type="button" class="guess__btn">
+            <img src="/coding-magic/assets/deandruff-38aa7c2b.svg" alt="" class="guess__img">
+          </button>
+        </form>
+        <p class="guess__result"></p>
+      </div>
+    </div>
+  </section>
   <section class="rps-sesection" id="rock-paper-scissors">
     <div class="line"></div>
     <div class="container">
@@ -133,7 +146,28 @@
         </form>
     </div>
 </section>
-  <!--  -->
+  <section class="time__calc">
+    <div class="line"></div>
+    <div class="container">
+        <h1 class="time__calc__title">Калькулятор часу</h1>
+
+        <div class="time__calc__form__container">
+            <div class="time__calc__row">
+                <form class="time__calc__form">
+                    <input type="number" class="time__calc__input" id="secondsInput" placeholder="Введіть число" />
+                    <button class="time__calc__btn" type="button">
+                        <img class="time__calc__btn__img" src="../img/svg/header/deandruff.svg" alt="" />
+                    </button>
+                </form>
+
+                <p class="time__calc__result">
+                    <span class="time__calc__dots">.......................</span>
+                    <span class="time__calc__output" id="output">0 дн. 00:00:00</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
   <!--  -->
   <!--  -->
   <!--  -->
