@@ -7,12 +7,6 @@
 }
 
 
-.line {}
-
-
-.container {}
-
-
 .calculator__title {
     font-size: 16px;
     margin-bottom: 36px;
@@ -48,13 +42,6 @@
 }
 
 
-.calculator__form__item {}
-
-
-.calculator__form__item__label {
-}
-
-
 .calculator__form__item__input {
     display: none;
 }
@@ -66,12 +53,19 @@
     background: #000;
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
     padding: 5px 10px;
+    transition: transform 0.3s ease;
 }
 
 
 .calculator__form__item__text:hover {
+    transform: scale(1.05);
+}
+
+
+.calculator__form__item__text__active{
     box-shadow: none;
 }
+
 
 .calculator__form__btn {
     color: #fff;
@@ -79,9 +73,10 @@
     background: #000;
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
     padding: 5px 10px;
+    transition: transform 0.3s ease;
 }
 
 
 .calculator__form__btn:hover{
-    box-shadow: none;
+    transform: scale(1.05);
 }
