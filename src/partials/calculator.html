@@ -4,15 +4,35 @@
         <h2 class="calculator__title">Калькулятор</h2>
         <form class="calculator__form" action="">
             <input class="calculator__form__input" type="number" placeholder="Введіть число">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="calculator__form__list">
+                <li class="calculator__form__item">
+                    <label class="calculator__form__item__label">
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="addition"/>
+                        <p class="calculator__form__item__text">+</p>
+                    </label>
+                </li>
+                <li class="calculator__form__item">
+                    <label class="calculator__form__item__label">
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="multiplication"/>
+                        <p class="calculator__form__item__text">*</p>
+                    </label>
+                </li>
+                <li class="calculator__form__item">
+                    <label class="calculator__form__item__label">
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="subtraction"/>
+                        <p class="calculator__form__item__text">-</p>
+                    </label>
+                </li>
+                <li class="calculator__form__item">
+                    <label class="calculator__form__item__label">
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="division"/>
+                        <p class="calculator__form__item__text">/</p>
+                    </label>
+                </li>
             </ul>
-            <input type="number" placeholder="Введіть число">
-            <button>=</button>
-            <input type="number" placeholder="Результат">
+            <input class="calculator__form__input" type="number" placeholder="Введіть число">
+            <button class="calculator__form__btn">=</button>
+            <input class="calculator__form__input" type="number" placeholder="Результат">
         </form>
     </div>
 </section>

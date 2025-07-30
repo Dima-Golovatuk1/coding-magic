@@ -41,22 +41,30 @@
 }
 
 
-.rps-sesection__form__label{
+.rps-sesection__form__btn {
+    width: 60px;
+    height: 60px;
     padding: 10px;
     border-radius: 20px;
     background: var(--secondary-color);
-    box-shadow: 0px 0px 2px 2px rgb(92, 92, 92);
+    border: none;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 
 
-.rps-sesection__form__label:hover{
-    box-shadow: none;
+.rps-sesection__form__btn:hover{
+    box-shadow:none;
 }
 
 
-.rps-sesection__form__input {
-    display: none;
+.rps-sesection__form__img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 20px;
+    background: var(--secondary-color);
 }
+
 
 
 .rps-sesection__text {
