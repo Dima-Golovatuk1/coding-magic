@@ -1,3 +1,7 @@
+import stone from "../img/rock-paper-scissors/stone.png"
+import paper from "../img/rock-paper-scissors/paper.png"
+import scissors from "../img/rock-paper-scissors/scissors.png"
+
 const text = document.getElementById("rps-text-result");
 const scoreUser = document.getElementById("rps-score-user");
 const scorePc = document.getElementById("rps-score-pc");
@@ -7,9 +11,9 @@ const imgPc = document.getElementById("rps-form-pc-img")
 const counter = { user: 0, pc: 0 };
 
 const rpsData = {
-    "stone": [1, 'img/rock-paper-scissors/stone.png'],
-    "scissors": [2, 'img/rock-paper-scissors/scissors.png'],
-    "paper": [3, 'img/rock-paper-scissors/paper.png']
+    "stone": [1, stone],
+    "scissors": [2, paper],
+    "paper": [3, scissors]
 };
 
 
