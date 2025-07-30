@@ -1,6 +1,14 @@
+main{
+    background-image: url(/img/background.png);
+    background-size: cover;
+    background-color: #EEEEEE;
+}
+
+
 .container{
     margin: 0 auto;
     width: 1090px;
+    background-color: var(--primary-color);
 }
 
 
