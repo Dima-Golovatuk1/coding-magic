@@ -12,8 +12,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat+Alternates&family=Sacramento&display=swap"
     rel="stylesheet">
   
-  <script type="module" crossorigin src="/coding-magic/assets/index-7ef64f37.js"></script>
-  <link rel="stylesheet" href="/coding-magic/assets/index-3436f269.css">
+  <script type="module" crossorigin src="/coding-magic/assets/index-2c1193c0.js"></script>
+  <link rel="stylesheet" href="/coding-magic/assets/index-9b05835d.css">
 </head>
 
 <body>
@@ -126,37 +126,37 @@
     <div class="line"></div>
     <div class="container">
         <h2 class="calculator__title">Калькулятор</h2>
-        <form class="calculator__form" action="">
-            <input class="calculator__form__input" type="number" placeholder="Введіть число">
+        <form class="calculator__form" id="calculator-form">
+            <input class="calculator__form__input" id="calculator-form-one-input" type="text" placeholder="Введіть число">
             <ul class="calculator__form__list">
                 <li class="calculator__form__item">
                     <label class="calculator__form__item__label">
-                        <input class="calculator__form__item__input" type="radio" name="radio" value="addition"/>
-                        <p class="calculator__form__item__text">+</p>
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="addition" id="calculator-form-addition"/>
+                        <p class="calculator__form__item__text" id="calculator-form-addition-text">+</p>
                     </label>
                 </li>
                 <li class="calculator__form__item">
                     <label class="calculator__form__item__label">
-                        <input class="calculator__form__item__input" type="radio" name="radio" value="multiplication"/>
-                        <p class="calculator__form__item__text">*</p>
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="multiplication" id="calculator-form-multiplication"/>
+                        <p class="calculator__form__item__text" id="calculator-form-multiplication-text">*</p>
                     </label>
                 </li>
                 <li class="calculator__form__item">
                     <label class="calculator__form__item__label">
-                        <input class="calculator__form__item__input" type="radio" name="radio" value="subtraction"/>
-                        <p class="calculator__form__item__text">-</p>
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="subtraction" id="calculator-form-subtraction"/>
+                        <p class="calculator__form__item__text" id="calculator-form-subtraction-text">-</p>
                     </label>
                 </li>
                 <li class="calculator__form__item">
                     <label class="calculator__form__item__label">
-                        <input class="calculator__form__item__input" type="radio" name="radio" value="division"/>
-                        <p class="calculator__form__item__text">/</p>
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="division" id="calculator-form-division"/>
+                        <p class="calculator__form__item__text" id="calculator-form-division-text">/</p>
                     </label>
                 </li>
             </ul>
-            <input class="calculator__form__input" type="number" placeholder="Введіть число">
+            <input class="calculator__form__input" id="calculator-form-two-input" type="text" placeholder="Введіть число">
             <button class="calculator__form__btn">=</button>
-            <input class="calculator__form__input" type="number" placeholder="Результат">
+            <input class="calculator__form__input" type="text" placeholder="Результат" id="calculator-form-result">
         </form>
     </div>
 </section>
@@ -188,7 +188,7 @@
   
   
    
-  
+   
    
 
  
