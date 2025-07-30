@@ -38,3 +38,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.dark-theme {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
