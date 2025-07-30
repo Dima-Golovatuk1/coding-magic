@@ -1,81 +1,7 @@
-/* .time__calc {
-  font-family: sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding: 0 20px;
-}
-
-.time__calc__title {
-  color: #000;
-  font-family: 'Montserrat Alternates';
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.time__calc__form__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.time__calc__form {
-  display: flex;
-  border-radius: 999px;
-  overflow: hidden;
-  box-shadow: 4px 4px 0 #aaa;
-  margin-bottom: 25px;
-}
-
-.time__calc__input {
-  padding: 12px 16px;
-  font-size: 16px;
-  border: none;
-  background: #ddd;
-  border-radius: 50px 0 0 50px;
-  width: 160px;
-  outline: none;
-  color: #7e7e7e;
-  font-family: 'Montserrat Alternates';
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.time__calc__btn {
-  background: black;
-  border: none;
-  padding: 12px 16px;
-  border-radius: 0 999px 999px 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.time__calc__btn img {
-  width: 16px;
-  height: 16px;
-}
-
-.time__calc__result {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  justify-content: center;
-}
-
-.time__calc__dots {
-  letter-spacing: 3px;
-}
-
- */
-
 .time__calc {
   font-family: 'Arial Rounded MT Bold', sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -121,7 +47,7 @@
   border: none;
   background: #ddd;
   border-radius: 20px 0 0 20px;
-  width: 180px;
+  width: 120px;
   outline: none;
   color: #7e7e7e;
   font-family: 'Montserrat Alternates';
@@ -138,18 +64,44 @@
   border-radius: 0 20px 20px 0;
   align-items: center;
   justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.time__calc__btn__img {
+  width: 16px;
+  height: 16px;
+  fill: white;
 }
 
 .time__calc__result {
-  gap: 16px;
   color: #000;
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  padding-bottom: 33px;
 }
 
 .time__calc__dots {
   letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #222;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 33px;
+  border-radius: 12px;
+}
+
+.time__calc__output {
+  color: #000;
+  font-family: 'Montserrat Alternates';
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 12px;
 }
