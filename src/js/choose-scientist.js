@@ -85,4 +85,30 @@ const scientists = [
   },
 ];
 
+const born19Ceuntry = document.getElementById('born-19-century');
+const einsteinBirthYear = document.getElementById('einstein-birth-year');
+const sortAlphabet = document.getElementById('sort-alphabet');
+const startsC = document.getElementById('starts-c');
+const removeStartsA = document.getElementById('remove-starts-a');
+const sortByLifespan = document.getElementById('sort-by-lifespan');
+const youngestScientist = document.getElementById('youngest-scientist');
+const longestShortestLife = document.getElementById('longest-shortest-life');
+const sameLetters = document.getElementById('same-letters');
+
+born19Ceuntry.addEventListener('click', () => {
+
+  const result = scientists.filter(scientist => scientist.age >= 1801 && scientist.age <= 1900);
+    if (result) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  
+});
+
+einsteinBirthYear.addEventListener("click", () => {
+  const einstein = scientists.find(scientist => scientist.name === "Albert" && scientist.surname === "Einstein");
+  alert(`Albert Einstein was born in ${einstein.born}`);
+});
+
 
