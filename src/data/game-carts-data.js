@@ -1,4 +1,4 @@
-const games = [
+export const games = [
     {
     id: 1,
     name: 'Високосний калькулятор',
