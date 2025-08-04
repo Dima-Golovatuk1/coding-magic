@@ -1,0 +1,42 @@
+.google-dinosaur .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.google-dinosaur__title {
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+
+.google-dinosaur__text {
+    color: var(--secondary-color);
+    font-size: 16px;
+    position: absolute;
+    top: 35px;
+    right: 250px;
+}
+
+
+.google-dinosaur__img {
+    
+}
+
+
+.google-dinosaur__btn {
+    color: var(--primary-color);
+    font-size: 16px;
+    border-radius: 20px;
+    background: #828282;
+    border: 2px var(--secondary-color) solid;
+    padding: 15px 80px;
+}
+
+
+.google-dinosaur__btn:hover{
+    background: #a5a5a5;
+}
