@@ -2,7 +2,7 @@ const input = document.getElementById('secondsInput');
 const output = document.getElementById('output');
 const button = document.querySelector('.time__calc__btn');
 
-button.addEventListener('click', () => {
+button.addEventListener('click', (event) => {
   event.preventDefault();
 
   const value = input.value;
