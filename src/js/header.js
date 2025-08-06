@@ -6,7 +6,6 @@ const saveBtn = document.querySelector('.save__btn');
 const input = document.getElementById('username');
 const userNameDisplay = document.querySelector('.header__text__user-name');
 
-
 modal1.style.display = 'block';
 
 closeBtn1.addEventListener('click', () => {
@@ -34,4 +33,5 @@ saveBtn.addEventListener('click', function (e) {
     modal1.style.display = 'none';
     modal2.style.display = 'block';
   }
+});
 });
