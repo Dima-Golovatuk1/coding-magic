@@ -34,4 +34,3 @@ saveBtn.addEventListener('click', function (e) {
     modal2.style.display = 'block';
   }
 });
-});
