@@ -1,29 +1,42 @@
-const modal = document.getElementById('myModal');
-const closeBtn = document.getElementById('closeModalBtn');
+// Elements
+const modal1 = document.getElementById('myModal');
+const modal2 = document.getElementById('myModal2');
+const closeBtn1 = document.getElementById('closeModalBtn');
+const closeBtn2 = document.getElementById('closeModalBtn2');
 const saveBtn = document.querySelector('.save__btn');
-modal.style.display = 'block';
+const input = document.getElementById('username');
+const userNameDisplay = document.querySelector('.header__text__user-name');
 
-// 2. Close modal on "X" click
-closeBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
+// Show modal 1 on page load
+modal1.style.display = 'block';
+
+// Close modal 1 (X)
+closeBtn1.addEventListener('click', () => {
+  modal1.style.display = 'none';
 });
 
-// 3. Optional: Close modal on clicking outside the modal content
+// Close modal 2 (X)
+closeBtn2.addEventListener('click', () => {
+  modal2.style.display = 'none';
+});
+
+// Click outside modals to close
 window.addEventListener('click', e => {
-  if (e.target === modal) {
-    modal.style.display = 'none';
-  }
+  if (e.target === modal1) modal1.style.display = 'none';
+  if (e.target === modal2) modal2.style.display = 'none';
 });
 
-// 4. Prevent form from submitting (page reload)
-modal.addEventListener('submit', function (e) {
+// On "Зберегти" submit
+saveBtn.addEventListener('click', function (e) {
   e.preventDefault();
+  const name = input.value.trim();
 
-  const name = document.getElementById('username').value.trim();
   if (name) {
     localStorage.username = name;
-    document.querySelector('.header__text__user-name').textContent = name;
-    modal.style.display = 'none';
+    if (userNameDisplay) {
+      userNameDisplay.textContent = `Привіт, ${name}!`;
+    }
+    modal1.style.display = 'none';
+    modal2.style.display = 'block';
   }
 });
-
