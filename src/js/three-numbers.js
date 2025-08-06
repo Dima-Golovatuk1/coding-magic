@@ -18,7 +18,7 @@ function onInputChange(e) {
     result.style.color = '#900';
   } else {
     const max = Math.max(num1, num2, num3);
-    result.textContent = `Найбільше число: ${max}`;
+    result.textContent = `Найбільше число, яке ви ввели - (${max})`;
     result.style.color = '#039900';
   }
 }
