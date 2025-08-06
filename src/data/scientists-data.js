@@ -1,4 +1,4 @@
-const scientists = [
+export const scientists = [
     {
     name: "Albert",
     surname: "Einstein",

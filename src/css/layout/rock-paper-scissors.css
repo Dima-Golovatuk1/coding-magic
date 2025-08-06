@@ -1,12 +1,5 @@
 .rps-sesection {
     color: var(--secondary-color);
-}
-
-
-.rps-sesection .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 
@@ -46,8 +39,8 @@
     height: 60px;
     padding: 10px;
     border-radius: 20px;
-    background: var(--secondary-color);
-    border: none;
+    background: #000;
+    border: 1px solid var(--secondary-color);
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease;
 }
@@ -64,7 +57,8 @@
     height: 60px;
     padding: 10px;
     border-radius: 20px;
-    background: var(--secondary-color);
+    background: #000;
+    border: 1px solid var(--secondary-color);
 }
 
 
@@ -100,7 +94,8 @@ padding: 10px 20px;
 
 .rps-sesection__div-score {
     position: absolute;
-    right: 232px;
+    right: 220px;
+    bottom: 158px;
     width: 100px;
     height: 60px;
 }
