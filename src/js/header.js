@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 const modal1 = document.getElementById('myModal');
 const modal2 = document.getElementById('myModal2');
 const closeBtn1 = document.getElementById('closeModalBtn');
@@ -7,7 +5,6 @@ const closeBtn2 = document.getElementById('closeModalBtn2');
 const saveBtn = document.querySelector('.save__btn');
 const input = document.getElementById('username');
 const userNameDisplay = document.querySelector('.header__text__user-name');
-const interactiveBtn = document.
 
 modal1.style.display = 'block';
 
@@ -37,4 +34,3 @@ saveBtn.addEventListener('click', function (e) {
     modal2.style.display = 'block';
   }
 });
->>>>>>> Stashed changes
