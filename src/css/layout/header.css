@@ -135,7 +135,7 @@
   position: relative;
   width: 576px;
   height: 316px;
-
+}
 .header__nav__item__submenu__item {
     background-color: var(--primary-color);
     padding: 10px 40px;
@@ -164,7 +164,7 @@
     background-color: #F1F1F1;
     color: var(--secondary-color);
     cursor: pointer;
-
+}
 
 .modal__label {
   color: var(--secondary-color);
