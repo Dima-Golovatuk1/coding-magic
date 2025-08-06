@@ -1,9 +1,16 @@
 .leap__year {
 }
-.container {
-}
+
 .year__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #000;
+  font-family: 'Montserrat Alternates';
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 36px;
+  margin-bottom: 36px;
 }
 .leap__year__form__container {
   display: flex;
@@ -50,10 +57,4 @@
   font-weight: 400;
 }
 
-.leap-success {
-  color: #039900;
-}
 
-.leap-error {
-  color: #900;
-}

@@ -1,8 +1,6 @@
 .max__form__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
+
+
 }
 
 .max__title {
@@ -19,7 +17,7 @@
 
 .max__form {
   display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   align-items: center;
   width: 150px;
   height: 35px;
@@ -28,12 +26,10 @@
 }
 
 .max__input {
-display: flex;
-justify-content: space-between;
-align-items: center;
 padding: 10px 20px;
 border-radius: 20px;
 background: #D7D7D7;
+
 
 }
 

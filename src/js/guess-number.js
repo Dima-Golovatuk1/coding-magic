@@ -1,30 +1,26 @@
 const form = document.getElementById('form-guess');
 const input = document.getElementById('guessInput');
-const button = document.querySelector('.guess__btn');
 const result = document.querySelector('.guess__result');
 
-let randomNumber = Math.floor(Math.random() * 10);
+form.addEventListener('submit', onFormSubmit);
 
-button.addEventListener('click', onGuess);
-
-function onGuess(e) {
+function onFormSubmit(e) {
   e.preventDefault();
 
-  const userGuess = Number(input.value.trim());
-  result.classList.remove('success', 'error');
+  const value = input.value.trim();
+  const userGuess = Number(value);
+  const randomNumber = Math.floor(Math.random() * 10) + 1;
 
-  if (!userGuess || userGuess < 1 || userGuess > 10) {
-    result.textContent = 'Введіть число від 1 до 10';
-    result.classList.add('error');
+  if (value === '' || isNaN(userGuess) || userGuess < 1 || userGuess > 10) {
+    result.textContent = 'Введіть число від 1 до 10.';
+    result.style.color = '#990000';
   } else if (userGuess === randomNumber) {
-    result.textContent = 'Вітаю! Ви вгадали число!';
-    result.classList.add('success');
-    randomNumber = Math.floor(Math.random() * 10) + 1;
+    result.textContent = `Вітаю, ви вгадали число!(${randomNumber}).`;
+    result.style.color = '#039900';
   } else {
-    result.textContent = `На жаль, це не ${userGuess}. Спробуйте ще раз!`;
-    result.classList.add('error');
+    result.textContent = `Ви програли, комп’ютер загадав(${randomNumber}).`;
+    result.style.color = '#990000';
   }
 
   input.value = '';
 }
-
