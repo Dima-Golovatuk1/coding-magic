@@ -5,7 +5,7 @@ const button = document.querySelector('.leap__year__btn');
 button.addEventListener('click', onBtnClick);
 
 function onBtnClick(e) {
-    e.preventDefault();
+   e.preventDefault();
     if (form.year.value % 4 === 0 && form.year.value > 0) {
         result.textContent = 'Ви народилися у високосний рік!';
         result.style.color="#039900"
