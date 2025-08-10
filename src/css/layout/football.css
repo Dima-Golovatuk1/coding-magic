@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 720px;
+  height: 220px;
+  margin-left: 185px;
 }
 .football__title {
   color: black;
@@ -29,11 +32,12 @@
   margin-left: auto;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
+  cursor: url('../../img/cursor/curs.png'), auto;
 }
 .football__img {
   width: 50px;
   height: 50px;
   flex-shrink: 0;
-
+  position: absolute;
+  transition: all 0.3s ease;
 }
