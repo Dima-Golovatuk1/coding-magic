@@ -1,10 +1,8 @@
-<section class="time__calc">
+<section class="time__calc" data-category="numerical">
     <div class="line"></div>
-    <div class="container">
-        <h1 class="time__calc__title">Калькулятор часу</h1>
+        <h2 class="time__calc__title">Калькулятор часу</h2>
 
         <div class="time__calc__form__container">
-            <div class="time__calc__row">
                 <form class="time__calc__form">
                     <input type="text" class="time__calc__input" pattern="^[0-9]+$" id="secondsInput" placeholder="Введіть число" />
                     <button class="time__calc__btn" type="button">
@@ -12,11 +10,8 @@
                     </button>
                 </form>
 
-                <p class="time__calc__result">
-                    <span class="time__calc__dots">.......................</span>
-                    <span class="time__calc__output" id="output">0 дн. 00:00:00</span>
-                </p>
+                
+                    <div class="time__calc__dots"></div>
+                    <div class="time__calc__output" id="output">0 дн. 00:00:00</div>
             </div>
-        </div>
-    </div>
 </section>
