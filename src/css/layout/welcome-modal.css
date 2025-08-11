@@ -1,6 +1,5 @@
 .backdrop {
   position: fixed;
-  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
@@ -16,16 +15,16 @@
 }
 
 .welcome__window {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 576px;
+  height: 316px;
   background-color: #fff;
   border-radius: 20px;
   padding: 46px 41px;
   text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 576px;
-  height: 316px;
-  transform: translate(-50%, -50%);
 }
 
 .close__button {
@@ -46,7 +45,7 @@
   height: 15px;
 }
 
-.modal__text {
+.welcome__form__text {
   color: #000;
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -62,7 +61,7 @@
   gap: 18px;
 }
 
-.modal__label {
+.welcome__modal__label {
   color: #000;
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -70,7 +69,7 @@
   font-weight: 400;
 }
 
-.modal__input {
+.welcome__modal__input {
   width: 169px;
   height: 35px;
   padding: 10px;
@@ -83,7 +82,7 @@
   font-weight: 400;
 }
 
-.save__btn {
+.welcome__modal__save__btn {
   background-color: #000;
   border: none;
   border-radius: 20px;
