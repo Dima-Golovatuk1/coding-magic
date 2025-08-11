@@ -24,6 +24,7 @@
 @import url('./layout/footer.css');
 @import url('./layout/welcome-modal.css');
 @import url('./layout/thanks-modal.css');
+@import url('./layout/footer-modal.css');
 
 :root {
   --primary-color: #fff;

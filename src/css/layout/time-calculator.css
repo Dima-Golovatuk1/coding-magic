@@ -20,9 +20,7 @@
 
 .time__calc__form__container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  flex-wrap: nowrap;
   align-items: center;
 }
 
