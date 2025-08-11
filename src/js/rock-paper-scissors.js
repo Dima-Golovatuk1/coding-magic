@@ -12,8 +12,8 @@ const counter = { user: 0, pc: 0 };
 
 const rpsData = {
     "stone": [1, stone],
-    "scissors": [2, paper],
-    "paper": [3, scissors]
+    "scissors": [2, scissors],
+    "paper": [3, paper]
 };
 
 
