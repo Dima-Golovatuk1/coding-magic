@@ -1,12 +1,23 @@
-const modal1 = document.getElementById('myModal');
-const closeBtn2 = document.getElementById('closeModalBtn2');
-const modal2 = document.getElementById('myModal2');
+const subscribeBtn = document.getElementById("footer-btn");
+const subscribeInput = document.getElementById("subscribe-input");
+const backdrop = document.getElementById("subscribeBackdrop");
 
-closeBtn2.addEventListener('click', () => {
-  modal2.style.display = 'none';
-});
 
-window.addEventListener('click', e => {
-  if (e.target === modal1) modal1.style.display = 'none';
-  if (e.target === modal2) modal2.style.display = 'none';
-});
+
+subscribeBtn.addEventListener("click", onSubscribeClick)
+backdrop.addEventListener("click", onBackdropClick)
+
+
+function onSubscribeClick(e){
+  e.preventDefault();
+  if(subscribeInput.value){
+    backdrop.classList.remove("is-hidden");
+  } 
+}
+
+
+function onBackdropClick(){
+  backdrop.classList.add("is-hidden");
+
+  subscribeInput.value = ""
+}

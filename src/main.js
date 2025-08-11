@@ -10,7 +10,5 @@ import './js/football';
 import './js/three-numbers';
 import './js/our-team';
 import './js/choose-scientist';
-import './js/footer';
 import './js/switch-theme';
 import './js/thanks-modal';
-import './js/footer-modal';
