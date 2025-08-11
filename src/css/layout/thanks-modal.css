@@ -1,0 +1,41 @@
+.thanks-window {
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 463px;
+  height: 245px;
+  transform: translate(-50%, -50%);
+}
+
+
+.modal2__text {
+  padding-top: 83px;
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sword__icon2 {
+  bottom: 146px;
+  left: 43px;
+}
+
+.puzzle__icon2 {
+  bottom: 70px;
+  left: 87px;
+}
+
+.tic-tac-toe__icon2 {
+  bottom: 70px;
+  right: 87px;
+}
+
+.game-development__icon2 {
+  bottom: 146px;
+  right: 42px;
+}

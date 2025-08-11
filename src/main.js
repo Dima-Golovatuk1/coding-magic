@@ -1,4 +1,5 @@
 import './js/header';
+import './js/welcome-modal';
 import './js/leap-year';
 import './js/guess-number';
 import './js/rock-paper-scissors';
@@ -11,3 +12,4 @@ import './js/our-team';
 import './js/choose-scientist';
 import './js/footer';
 import './js/switch-theme';
+import './js/thanks-modal';
