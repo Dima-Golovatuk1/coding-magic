@@ -15,8 +15,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat+Alternates&family=Sacramento&display=swap"
     rel="stylesheet">
   
-  <script type="module" crossorigin src="/coding-magic/assets/index-aaaba7ee.js"></script>
-  <link rel="stylesheet" href="/coding-magic/assets/index-b7facbf7.css">
+  <script type="module" crossorigin src="/coding-magic/assets/index-d3f1b5b3.js"></script>
+  <link rel="stylesheet" href="/coding-magic/assets/index-3d92505e.css">
 </head>
 
 <body>
@@ -53,7 +53,7 @@
     </nav>
 
     <img class="header__switch-icon" id="icon" src="/coding-magic/assets/white-beca1d45.svg" alt="#">
-    <p class="header__text">Вітаємо, <span class="header__text__user-name">User</span>!</p>
+    <p class="header__text">Вітаємо, <span class="header__text__user-name" id="headerUsername">User</span>!</p>
   </div>
 </header>
 
@@ -399,8 +399,9 @@
               type="email"
               class="footer__input"
               placeholder="Ваша ел. адреса..."
+              id="subscribe-input"
           /></label>
-          <button class="footer__button">Підписатись</button>
+          <button class="footer__button" id="footer-btn">Підписатись</button>
         </form>
         <p class="footer__text">
           *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
@@ -410,21 +411,21 @@
   </div>
 </footer>
 
-  <div class="backdrop" id="modalBackdrop1">
+  <div class="backdrop" id="welcomeBackdrop">
     <div class="welcome__window" id="myModal">
-        <button type="button" id="closeModalBtn" class="close__button">
+        <button type="button" id="welcomeCloseModalBtn" class="close__button">
             <img class="close__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABpSURBVHgBpVTbDQAhCOsIbHC3gSPd6DeKbz/UGIE2IRpTGuQFNAh8eMblzfZnC7AhdD9ZH7RCR75W6Mq7EdQRn4jWL28OZoFV6PMKDBSB2E8X6EjonNDVofuE7lh6dgSgpnhaBx7UNZAARn4kbiboRSEAAAAASUVORK5CYII=" alt="cross">
         </button>
-        <p class="modal__text">
+        <p class="welcome__form__text">
             Привіт! <br>
             Ви потрапили на сайт інтерактивних ігор та завдань. <br>
             Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
             Бажаємо Вам гарно провести час!
         </p>
         <form class="welcome__form">
-            <label class="modal__label" for="username">Введіть своє ім’я:</label><br>
-            <input class="modal__input" type="text" id="username" placeholder="Ваше ім’я..." autofocus autocomplete="off">
-            <button type="submit" class="save__btn">Зберегти</button>
+            <label class="welcome__modal__label" for="username">Введіть своє ім’я:</label><br>
+            <input class="welcome__modal__input" type="text" id="welcomeUsername" placeholder="Ваше ім’я..." autofocus autocomplete="off">
+            <button type="submit" class="welcome__modal__save__btn" id="welcomeSaveBtn">Зберегти</button>
         </form>
         <div class="icons">
             <img class="sword__icon icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHtSURBVHgBxda7rgFBGAfwOScnaiEhUSBRUHgFiSDUVAqFSuESnUZBQ0PjDUQl8RLewCWhkeANaGi/45vk22SZ3R1jNv6JsLf5zTcX2R94hH0hv+xL+WOacz6f2XQ6FV6rVqssGo3qhxFNp9PM4/GwUChknN9sNux6vfLf/X6ff2sbakJjsRhbr9dsuVzyT6FQ4Ch2xhTQkNPpBJFIBDKZDNxuN+P8cDjEhQvj8RgenYJer2dc+xi2QhEjFKMVlkW1woRms1lH9H6/Qzwe/xx+p1JEU6kUPLYRf04ZfhfN5XIv6NuwLtQR3m63sFgsTOjznA4GAyGK91mhtjCifr+fN9putx33qWyltjA+gGij0YDJZMIbTyQSygtJGsZqw+Ew1Ot1fkz4aDSyRC+XizRqCdvhxWJRiMoMrxSMmc1mHHnG8/m8cY/snErDq9UKAoEAlMtlU+W0inHYVVFLeLfbcbTZbPJjHHafz/eCJ5NJJVQIP6MUwjudjgnvdrugEiaDUiqVinDO6U9GCXZCW60WBINBmM/nxrDjPsf5PxwOoATjdkAUK7JD9/s9Pz4ejxxHFKdAJUbF2Hts7PFiZotScEGpoiaYcKyC8FqtJkR15GVVE14qlVxDhTDhbqKYH64Lgu/CXq+XuRVL2O38A/YFchOnwPaDAAAAAElFTkSuQmCC" alt="sword">
@@ -434,7 +435,7 @@
         </div>
     </div>
 </div>
-  <div class="backdrop" id="modalBackdrop2">
+  <div class="thanks-backdrop is-hidden" id="subscribeBackdrop">
     <div id="myModal2" class="thanks-window">
         <button type="button" id="closeModalBtn2" class="close__button">
             <img class="close__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABpSURBVHgBpVTbDQAhCOsIbHC3gSPd6DeKbz/UGIE2IRpTGuQFNAh8eMblzfZnC7AhdD9ZH7RCR75W6Mq7EdQRn4jWL28OZoFV6PMKDBSB2E8X6EjonNDVofuE7lh6dgSgpnhaBx7UNZAARn4kbiboRSEAAAAASUVORK5CYII=" alt="cross">
@@ -449,35 +450,6 @@
         </div>
     </div>
 </div>
-  <div class="footer__modal__backdrop active" id="footer__modal">
-  <div class="footer__modal__content">
-    <button class="close__button" type="button" id="footer__modal__close">
-      <img class="icon__close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABpSURBVHgBpVTbDQAhCOsIbHC3gSPd6DeKbz/UGIE2IRpTGuQFNAh8eMblzfZnC7AhdD9ZH7RCR75W6Mq7EdQRn4jWL28OZoFV6PMKDBSB2E8X6EjonNDVofuE7lh6dgSgpnhaBx7UNZAARn4kbiboRSEAAAAASUVORK5CYII=" alt="#">
-    </button>
-    <h2 class="modal__footer__title">Дякую за підписку!</h2>
-    <img
-      src="/coding-magic/assets/sword-03bca9ec.png"
-      alt="sword"
-      class="modal__footer__img footer__first__img"
-    />
-    <img
-      src="/coding-magic/assets/game-13a44f03.png"
-      alt="gamedev"
-      class="modal__footer__img footer__second__img"
-    />
-    <img
-      src="/coding-magic/assets/puzzle-1cb35563.png"
-      alt="puzzle"
-      class="modal__footer__img footer__third__img"
-    />
-    <img
-      src="/coding-magic/assets/xo-92480b5e.png"
-      alt="xo"
-      class="modal__footer__img footer__fourth__img"
-    />
-  </div>
-</div>
-
 
   
 </body>
