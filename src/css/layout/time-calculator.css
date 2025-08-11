@@ -54,7 +54,7 @@
 }
 
 .time__calc__btn {
-  background: var(--secondary-color);
+  background: black;
   border: none;
   padding: 12px 16px;
   cursor: pointer;
