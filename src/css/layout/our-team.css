@@ -1,8 +1,8 @@
 .team {
 }
-.container {
-}
+
 .team__title {
+  color: var(--secondary-color);
   padding-top: 36px;
   border-top: 1px solid var(--secondary-color);
   font-family: 'Montserrat Alternates';
@@ -102,16 +102,17 @@
 }
 
 .swiper-pagination {
-  bottom: 0;
   text-align: center;
   position: absolute;
   width: 100%;
 }
 .swiper-button-prev {
   /* left: -60px; */
+
 }
 .swiper-button-next {
   /* right: -60px; */
+
 }
 
 
