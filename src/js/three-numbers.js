@@ -1,5 +1,5 @@
 const form = document.getElementById('form-max');
-const result = document.querySelector('.max__result');
+const result = document.querySelector('#max-result');
 
 form.addEventListener('input', onInputChange);
 
@@ -18,7 +18,7 @@ function onInputChange(e) {
     result.style.color = '#900';
   } else {
     const max = Math.max(num1, num2, num3);
-    result.textContent = `Найбільше число, яке ви ввели - (${max})`;
+    result.textContent = `${max}`;
     result.style.color = '#039900';
   }
 }

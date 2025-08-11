@@ -1,12 +1,17 @@
-.max__form__container {
-
-
+.max__number {
+  padding-bottom: 36px;
 }
 
-.max__title {
+.max__form__container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+
+.max__title {
+  text-align: center;
   color: #000;
   font-family: 'Montserrat Alternates';
   font-size: 16px;
@@ -17,33 +22,31 @@
 
 .max__form {
   display: flex;
-    justify-content: space-around;
   align-items: center;
-  width: 150px;
-  height: 35px;
   filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
   gap: 38px;
+  margin-bottom: 36px;
 }
 
 .max__input {
-padding: 10px 20px;
-border-radius: 20px;
-background: #D7D7D7;
-
-
+  width: 135px;
+  height: 35px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #d7d7d7;
 }
 
 .max__input::placeholder {
-  color: #7e7e7e;
+color: #7E7E7E;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-weight: 400;
 }
 
-
-
 .max__result {
-  text-align: right;
+  text-align: center;
   font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-weight: 400;
+  color: var(--secondary-color);
 }
-
-
