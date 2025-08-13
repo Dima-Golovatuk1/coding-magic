@@ -17,6 +17,7 @@
 .header__link-logo__icon {
   width: 93px;
   height: 38px;
+  fill: var(--secondary-color);
 }
 
 .header__nav {
