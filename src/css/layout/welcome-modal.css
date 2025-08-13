@@ -6,6 +6,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   transition: opacity 350ms linear;
+  z-index: 1;
 }
 
 .backdrop.is-hidden {
@@ -25,6 +26,7 @@
   border-radius: 20px;
   padding: 46px 41px;
   text-align: center;
+  z-index: 2;
 }
 
 .close__button {
