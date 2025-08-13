@@ -1,47 +1,29 @@
-.football {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 720px;
-  height: 320px;
-  margin-left: 185px;
-}
-
-/* .line{
-} */
-
 .football__title {
-  color: black;
-  padding-top: 6px;
- 
-  font-family: 'Montserrat Alternates';
+  text-align: center;
+  color: var(--secondary-color);
+  padding-top: 36px;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin-bottom: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
+
 .football__div {
-  background-color: #5abb58;
-  background-position: center;
   width: 700px;
   height: 320px;
   border-radius: 37px;
   border: 2px solid #000;
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
-  cursor: url('../../img/cursor/curs.png'), auto;
+  cursor: url('img/cursor/curs.png'), auto;
+  background-color: #5abb58;
+  background-position: center;
 }
+
+
 .football__img {
   width: 50px;
   height: 50px;
-  flex-shrink: 0;
   position: absolute;
   transition: all 0.3s ease;
 }

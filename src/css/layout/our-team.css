@@ -1,20 +1,10 @@
-.team {
+.team__title {
+  font-size: 16px;
+  margin-bottom: 36px;
+  text-align: center;
 }
 
-.team__title {
-  color: var(--secondary-color);
-  padding-top: 36px;
-  border-top: 1px solid var(--secondary-color);
-  font-family: 'Montserrat Alternates';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .swiper {
   display: flex;
   justify-content: center;

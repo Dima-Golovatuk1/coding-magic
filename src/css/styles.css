@@ -10,7 +10,6 @@
 
 /* layout */
 @import url('./layout/header.css');
-@import url('./layout/hero.css');
 @import url('./layout/leap-year.css');
 @import url('./layout/guess-number.css');
 @import url('./layout/rock-paper-scissors.css');
